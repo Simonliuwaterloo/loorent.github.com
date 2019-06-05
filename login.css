@@ -1,0 +1,95 @@
+form {
+  margin: auto;
+  padding: 3em;
+  width: 250px;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+  top: 180px;
+  margin: 0 auto;
+}
+form div + div {
+  margin-top: 1em;
+}
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 100px;
+  box-sizing: border-box;
+  border: 1px soild #999999;
+}
+input:focus,
+textarea:focus {
+  border-color: #000000;
+}
+textarea {
+  vertical-align: top;
+}
+#loginBtn {
+  margin-left: 5em;
+  left: 100px;
+  float: left;
+}
+body {
+  background: url(img/picture3.jpg);
+  background-size: 100%;
+}
+footer {
+  bottom: 20px;
+}
+/* For all the layout */
+header {
+  height: 20%;
+  text-align: center;
+  padding: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* This font-family I cant choose a good one and I gonna edit it later */
+  font-size: 3em;
+}
+form {
+  height: 30%;
+}
+footer {
+  height: 20%;
+}
+input {
+  padding: 4px 10px;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+  color: #888;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+input input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: text;
+}
+
+input:hover {
+  color: #444;
+  background: #eee;
+  border-color: #ccc;
+  text-decoration: none;
+  cursor: text;
+}
+#userInfo {
+  padding: 20px;
+  
+}
