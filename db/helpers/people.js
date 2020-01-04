@@ -5,6 +5,8 @@ People are those who have accounts at loorent
 Each record should cantain name(should be unique), realName, id(auto generated) and password(hashed)
 
 People database should be and only be updated when an new account is registered
+
+todo:In future updates authencation should not be done on ourside
 **/
 class PeopleDB {
     constructor(dao) {
