@@ -107,4 +107,4 @@ dist
 .vscode-test
 
 #db
-.sqlite3
+*.sqlite3
