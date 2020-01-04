@@ -1,0 +1,15 @@
+{
+  "name": "rss-db",
+  "version": "1.0.0",
+  "description": "db stores rss data",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jianyan Li",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "sqlite3": "^4.1.1"
+  }
+}
