@@ -1,7 +1,7 @@
 const Promise = require('bluebird')
-const AppDAO = require('./dao')
-const PeopleDB = require('./people')
-const PlacesDB = require('./places')
+const AppDAO = require('./helpers/dao')
+const PeopleDB = require('./helpers/people')
+const PlacesDB = require('./helpers/places')
 
 function main() {
     const dao = new AppDAO('./people.sqlite3')
