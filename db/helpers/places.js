@@ -3,7 +3,7 @@ PlacesDB is the class for creating and updating a database for "places".
 Places are places people can rent
 
 Each record should cantain id(auto generated), location(TEXT), price(INTEGER), description(TEXT), images(TEXT, url separated by comma),
-tel(TEXT), mail(TEXT), owner(person in PeopleDB, TEXT) 
+tel(TEXT), mail(TEXT), owner(person name in PeopleDB, TEXT) 
 
 Places database can be updated when a person create/update a posting
 **/
@@ -40,6 +40,11 @@ class PlacesDB {
             WHERE id = ?`, [id])
     }
 
+    getPlaceByLoc(location) {
+        return this.dao.get(
+            `SELECT * FROM places
+            WHERE location = ?`, [location])
+    }
 }
 
 module.exports = PlacesDB;
