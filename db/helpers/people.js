@@ -19,14 +19,15 @@ class PeopleDB {
             id INTEGER PRIMARY KEY,     
             name TEXT,
             realName TEXT,
-            password TEXT)`
+            password TEXT
+            salt TEXT)`
         return this.dao.run(sql)
     }
 
-    createPerson(name, realName, password) {
+    createPerson(name, realName, password, salt) {
         return this.dao.run(
-            `INSERT INTO people (name, realName, password)
-                VALUES (?, ?, ?)`, [name, realName, password])
+            `INSERT INTO people (name, realName, password, salt)
+                VALUES (?, ?, ?, ?)`, [name, realName, password, salt])
     }
 
     getPersonByName(name) {

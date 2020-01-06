@@ -35,7 +35,7 @@ app.post('/people/create/:name/:relName/:pw', async(req, res) => {
     const pw = req.params.pw
     const rec = await peopleDB.getPersonByName(name)
     if (rec == undefined) {
-        await peopleDB.createPerson(name, relName, pw)
+        await peopleDB.createPerson(name, relName, pw, "")
         res.sendStatus(201)
     } else {
         res.sendStatus(409)
